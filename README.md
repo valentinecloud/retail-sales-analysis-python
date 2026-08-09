@@ -13,3 +13,9 @@ This project is part of my journey to develop practical data analytics skills by
 The objective of this analysis is to identify where the company's revenue comes from and communicate these findings in a way that helps management make informed decisions.
 
 The analysis focuses on revenue by product, category, location, and time, while also exploring quantity sold and the potential influence of discounts and payment methods on sales performance.
+
+## Data Description
+
+The dataset contains retail transaction records, with each row representing a customer transaction. Key variables include transaction date, product category, item, location, quantity purchased, unit price, total amount spent, customer ID, payment method, and discount status.
+
+These variables allow the analysis to examine revenue generation from different perspectives, including product categories, individual items, sales volume, locations, time periods, and customer purchasing behavior.

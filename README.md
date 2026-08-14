@@ -22,6 +22,14 @@ These variables allow the analysis to examine revenue generation from different 
 
 ## 🧩 Analytical Workflow
 
+## 🔎 Key Business Questions
+
+- Which product categories generate the highest revenue?
+- What factors contribute to differences in category performance?
+- How do price and quantity sold influence revenue?
+- Do discounts appear to affect sales volume and revenue?
+- What additional data would help explain profitability and customer behavior?
+
 ### 1. Data Understanding & Preparation
 
 - Loaded and inspected the raw sales data

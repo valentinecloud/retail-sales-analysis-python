@@ -2,62 +2,69 @@
 
 ## Project Overview
 
-This project analyzes a retail store sales dataset using Python to understand the factors that influence revenue generation and overall business performance. Each record represents a customer transaction and contains information such as transaction date, product category, location, payment method, quantity purchased, unit price, total amount spent, customer ID, and discount status.
+This project analyzes retail transaction data using Python to identify key revenue drivers, understand sales patterns, and generate business insights that can support management decision-making.
 
-The goal of this project is to answer real business questions that support decision-making. These include identifying key revenue drivers, understanding customer purchasing behavior, evaluating the impact of discounts and payment methods, and uncovering trends that can help improve business performance.
-
-This project is part of my journey to develop practical data analytics skills by solving real business problems rather than only learning programming concepts.
+The analysis combines data cleaning, exploratory analysis, business-question development, and a Power BI dashboard to communicate the findings.
 
 ## Business Objective
 
-The objective of this analysis is to identify where the company's revenue comes from and communicate these findings in a way that helps management make informed decisions.
+The objective is to understand where revenue comes from and what factors contribute to differences in sales performance.
 
-The analysis focuses on revenue by product, category, location, and time, while also exploring quantity sold and the potential influence of discounts and payment methods on sales performance.
+Key questions include:
 
-## Data Description
-
-The dataset contains retail transaction records, with each row representing a customer transaction. Key variables include transaction date, product category, item, location, quantity purchased, unit price, total amount spent, customer ID, payment method, and discount status.
-
-These variables allow the analysis to examine revenue generation from different perspectives, including product categories, individual items, sales volume, locations, time periods, and customer purchasing behavior.
-
-## 🧩 Analytical Workflow
-
-## 🔎 Key Business Questions
-
-- Which product categories generate the highest revenue?
-- What factors contribute to differences in category performance?
+- Which categories and products generate the most revenue?
 - How do price and quantity sold influence revenue?
-- Do discounts appear to affect sales volume and revenue?
-- What additional data would help explain profitability and customer behavior?
+- How do sales vary over time and across locations?
+- Do discounts appear to influence sales performance?
 
-### 1. Data Understanding & Preparation
+## Tools & Data Preparation
 
-- Loaded and inspected the raw sales data
-- Reviewed the dataset structure, columns, and data types
-- Identified and handled data quality issues
-- Prepared the cleaned dataset for analysis
+**Tools:** Python (Pandas, NumPy, Matplotlib), Power BI
 
-### 2. Exploratory Data Analysis
+The raw dataset contained 12,575 transactions. After addressing missing values and other data-quality issues, 11,362 records were retained for analysis.
 
-- Examined revenue, quantity sold, pricing, discounts, and product categories
-- Compared performance across product categories
-- Identified notable patterns and differences in sales performance
+The cleaned dataset was then used for exploratory analysis and dashboard development.
 
-### 3. Business Question Development
+## Key Findings
 
-- Used findings from the initial exploration to identify areas requiring deeper investigation
-- Identified Butchers as the highest-revenue category
-- Developed follow-up questions to understand what was driving its performance
+- **Butchers** generated the highest category revenue.
+- Higher revenue was not always associated with the highest quantity sold, highlighting the role of pricing and product mix.
+- **Item_25_FUR** was the highest-revenue individual product.
+- Revenue varied considerably across months, with noticeable changes in the monthly sales trend.
+- Discounted and non-discounted transactions showed differences in sales volume and revenue, but discounts alone did not explain overall revenue performance.
 
-### 4. Deep-Dive Analysis
+## Recommendations
 
-- Investigated Butchers' revenue performance
-- Compared price, quantity sold, and revenue per unit
-- Examined product mix and discount behavior
-- Interpreted findings in a business context
+- Monitor high-performing categories and products to support inventory and sales planning.
+- Evaluate pricing and product mix alongside sales volume when assessing category performance.
+- Review discount strategies using both revenue and sales-volume measures rather than volume alone.
+- Collect additional profitability and customer-level data to support deeper analysis.
 
-### 5. Insights & Recommendations
+## Dashboard
 
-- Translated analytical findings into business insights
-- Developed recommendations based on the available evidence
-- Identified limitations and additional data needed for further analysis
+The Power BI dashboard provides an interactive view of:
+
+- Revenue and sales KPIs
+- Monthly revenue trends
+- Revenue by category and location
+- Top products by revenue
+- Discounted vs. non-discounted performance
+
+### Dashboard Preview
+
+![Dashboard Overview](visuals/01_dashboard_overview.png)
+
+Additional interactive views:
+
+- [Category Filter](visuals/02_dashboard_category_filter.png)
+- [Discount Filter](visuals/03_dashboard_discount_filter.png)
+- [Location Filter](visuals/04_dashboard_location_filter.png)
+
+## Limitations
+- The dataset does not provide sufficient information to measure profitability or profit margins.
+- Customer behavior analysis is limited by the available customer-level information.
+- Additional operational data such as inventory, costs, promotions, and marketing activity would enable deeper investigation of revenue drivers.
+
+# Author
+
+## Valentine Kimotho
